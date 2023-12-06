@@ -1,0 +1,88 @@
+.imgVol{
+    width: 1280px;
+  height: 656px;
+  flex-shrink: 0;
+  background: url(volunteer\ 1.png), lightgray 50% / cover no-repeat;
+  }
+  
+  .imgOng{
+    width: 1280px;
+  height: 656px;
+  flex-shrink: 0;
+  background: url(volunter\ 1.png), lightgray 50% / cover no-repeat;
+  }
+  
+  .divSou{
+    margin-right: 600px;
+    margin-top: 150px;
+    font-size: 130%;
+    text-align: left;
+  }
+  
+  .voluntario{
+    display: flex;
+  width: 588px;
+  height: 40px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #00FFB2;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  }
+  
+  .textoVol{
+    display: flex;
+  width: 556px;
+  height: 138px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #F1F1F1;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  }
+  
+  .botaoBaixar {
+    width: 437px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #24AD7F;
+  }
+  
+  .ong{
+    display: flex;
+  width: 475px;
+  height: 40px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #00FFB2;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  }
+  
+  .textoOng{
+    display: flex;
+  width: 400px;
+  height: 138px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #F1F1F1;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  }

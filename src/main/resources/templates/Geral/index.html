@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="viewport" content="width=], initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>União Voluntaria</title>
+        <link rel="website icon" type="png" href="./../image/logo2.png">
+        <link rel="stylesheet" href="/style3.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" 
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+    </head>
+
+	<script>
+		window.addEventListener('scroll', function(){
+    	var header = document.querySelector('header');
+    	header.classList.toggle('sticky', window.scrollY > 0);
+		});
+
+		function toggleMenu(){
+	    var menuToggle = document.querySelector('.toggle');
+	    var menu = document.querySelector('.menu');
+	    menuToggle.classList.toggle('active');
+	    menu.classList.toggle('active');
+		}
+
+	</script>
+    <body>
+
+        <header>
+
+            <a th:href="@{/uniao-voluntaria/index}" class="logo"><img src="../image/Logo.png"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+                <ul class="menu">
+                    <li><a th:href="@{/uniao-voluntaria/voluntario}" onclick="toggleMenu();">Sou um Voluntario</a></li>
+                    <li><a th:href="@{/uniao-voluntaria/ong}" onclick="toggleMenu();">Sou uma Ong</a></li>
+                    <li><a th:href="@{/uniao-voluntaria/login}" onclick="toggleMenu();">Entrar</a></li>
+                </ul>
+
+        </header>
+
+        <section class="banner" id="home">
+            <div class="textBx">
+                <h2><span>Nossa plataforma quer <br> Divulgar Trabalhos Voluntarios de Ongs</span></h2>
+                <h3>Juntos somos mais fortes</h3>
+                <a href="#info" class="btn">Mais Sobre</a>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="heading white">
+                <h2>Eventos</h2>
+                <p>Confira alguns trabalhos voluntarios disponiveis</p>
+            </div>
+            <div class="content">
+                <div class="servicesBx">
+                    <a>
+                        <img src="/Image/Imagem-para-Portal-94.png" alt="evento">
+                        <h2>Nome do Evento</h2>
+                        <p>Algumas Descrições do Evento</p>
+                        <a onclick="openModal()" href="#UniaoVoluntaria" class="btn">Saiba mais</a>
+                    </a>
+                </div>
+
+                <div class="servicesBx">
+                    <a href="sustentabilidade.html">
+                        <img src="/Image/Imagem-para-Portal-94.png">
+                        <h2>Nome do Evento</h2>
+                        <p>Algumas Descrições do Evento</p>
+                        <a onclick="openModal()" href="#UniaoVoluntaria" class="btn">Saiba mais</a>
+                    </a>
+                </div>
+
+                <div class="servicesBx">
+                    <a href="sustentabilidade.html">
+                        <img src="../../image/Imagem-para-Portal-94.png">
+                        <h2>Nome do Evento</h2>
+                        <p>Algumas Descrições do Evento</p>
+                        <a  onclick="openModal()" href="#UniaoVoluntaria" class="btn">Saiba mais</a>
+                    </a>
+                </div>
+
+                <div class="servicesBx">
+                    <a href="sustentabilidade.html">
+                        <img src="../../image/Imagem-para-Portal-94.png">
+                        <h2>Nome do Evento</h2>
+                        <p>Algumas Descrições do Evento</p>
+                        <a onclick="openModal()" href="#UniaoVoluntaria" class="btn">Saiba mais</a>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="modal-container">
+                <div class="modal">
+                        <div class="header">
+                           <img src="/image/Imagem-para-Portal-94.png">
+                           <div class="txt">
+                            <h1>Entrga de cesta basica</h1>
+                            <br>
+                            <p>Dados do eventos como: local, dia, Horario, etc..</p>
+                           </div>
+                            
+                        </div>
+
+                        <div class="main--op">
+                            <div class="title">
+                                <h1>Descrição de exemplo</h1>
+                            </div>
+
+                            <div class="info">
+                                <p>
+                                    Sobre a vaga
+                                    <br>
+                                    <br>
+                                    Nós do Atados acreditamos no voluntariado como troca de vivências e experiências, como possibilidade de desenvolvimento de habilidades e uma oportunidade das pessoas participarem ativamente da transformação social.
+                                    Com o propósito de mobilizar pessoas e impulsionar transformações positivas na sociedade, o Atados também promove encontros e formações de fortalecimento de rede do terceiro setor.
+                                    <br>
+                                    <br>
+                                    O próximo encontro, Café com ONG's, tem como objetivo abrir espaço de troca sobre mobilização, gestão e engajamento de voluntários para organizações sociais.
+                                    Além disso, incentiva a partilha de conhecimento, aprendizados e experiências. Será na Zona Norte do Rio de Janeiro, no dia 10/10!
+                                    <br>
+                                    <br>
+                                    Estamos em busca de pessoas comunicativas e com agilidade para nos apoiar com a produção do evento, como:
+                                </p>
+                            </div>
+                        </div>
+                        <a th:href="@{/uniao-voluntaria/voluntario}" class="btn">Quero me inscrever</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="info">
+            <div class="heading">
+                <h2>Nos Conheça</h2>
+            </div>
+            <div class="main--info">
+                <div class="contentBx w50">
+                    <h3>Nosso Proposito</h3>
+                    <br>
+                    <p>
+                        A empresa união voluntária influência as pessoas a trabalharem em ações não remuneradas, afim de ajudar e crescer projetos e ONGs.
+                        Nossa grande meta é apresentar um ótimo trabalho no funcionamento do nosso site, e que a comunicação do usuário e da organização seja sempre agradável e espontânea.
+                        Alcançando um grande índice de acesso e voluntariados acreditamos que podemos expandir e até melhorar em alguns pontos.
+                        Dentro das ONGs pretendemos atingir o maior número de pessoas para conseguir mais trabalhos e garantir outros resultados significantes, e assim podendo fazer valer a pena a união voluntária
+                    </p>
+                </div>
+
+                <div class="contentBx w50">
+                    <h3>Introdução</h3>
+                    <br>
+                    <p> Nosso empreendimento é necessário em uma sociedade como a dos dias de hoje, pois praticar uma ação voluntária pode te trazer, muitas habilidades, experiências valiosas, conhecer pessoas incríveis e até gerar um impacto positivo em sua comunidade, além do mas a prática frequente dessa ação leva um senso de realização e satisfação pessoal.
+                        Ongs sempre precisam de pessoas para fazer o bem sem olhar a quem, acreditamos na compaixão e na humildade de voluntários para ajudar e colocar a mão na massa por um pais melhor e uma sociedade mais positiva.
+                        Portanto nosso empreendimento é necessário para a evolução pessoal de cada pessoa, e para a distribuição de trabalhos voluntários em todo o pais.
+                    </p> 
+                </div>
+            </div>
+        </section>
+
+        <script>
+			const modal = document.querySelector('.modal-container')
+			const tbody = document.querySelector('tbody')
+			const sNome = document.querySelector('#m-nome')
+			const sFuncao = document.querySelector('#m-funcao')
+			const sSalario = document.querySelector('#m-salario')
+			const btnSalvar = document.querySelector('#btnSalvar')
+
+			let itens
+			let id
+
+			function openModal(edit = false, index = 0) {
+			modal.classList.add('active')
+
+  			modal.onclick = e => {
+		    if (e.target.className.indexOf('modal-container') !== -1) {
+		      modal.classList.remove('active')
+		    }
+		    }
+		
+		    if (edit) {
+		        sNome.value = itens[index].nome
+		        sFuncao.value = itens[index].funcao
+		        sSalario.value = itens[index].salario
+		        id = index
+		     } else {
+		        sNome.value = ''
+		        sFuncao.value = ''
+		        sSalario.value = ''
+		     }
+			}
+		</script>
+    </body>
+</html>

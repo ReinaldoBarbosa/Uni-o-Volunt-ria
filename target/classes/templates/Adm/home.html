@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="../../static/Css/Style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logo"></div>
+            <ul class="menu">
+                <li class="active">
+                    <a href="home.html">
+                        <ion-icon name="home"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="crud-user.html">
+                        <ion-icon name="calendar"></ion-icon>
+                        <span>Eventos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pedido.html">
+                        <ion-icon name="mail-unread"></ion-icon>
+                        <span>Pedidos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        <i class='bx bx-support icon'></i>
+                        <span>Fale conosco</span>
+                    </a>
+                </li>
+
+                <li class="sair">
+                    <a href="index.html">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                        <span>Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main--content">
+            <div class="header--wrapper">
+                <div class="searh--box">
+                    <input type="tect" placeholder="Pesquisar">
+                    <ion-icon name="search"></ion-icon>
+                </div>
+                <div class="user--info">
+                    <ion-icon name="notifications"></ion-icon>
+                    <a href="tela1.html"><img src="../../image/no-profile-picture-15257.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="container--superior">
+                <!--Conteudo do esquedo-->
+                <div class="card--container">
+                    <h3 class="main--title">
+                        Monitore a saúde do seu negócio
+                    </h3>
+                    <p>Controle seus e analise dados de uma maneira mais fácil</p>
+
+                    <div class="card--wrapper">
+                        <div class="card">
+                            <div>
+                                <div class="name">Visualizações</div>
+                                <div class="numbers"><span>63</span> +3 no ultimo dia</div>
+                          
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div>
+                                <div class="name">Seguidores</div>
+                                <div class="numbers"><span>63</span> +3 no ultimo dia</div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div>
+                                <div class="name">Inscrições</div>
+                                <div class="numbers"><span>63</span> +3 no ultimo dia</div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="soli--list">
+                    <div class="inscricao">
+                        <h1>Solicitações</h1>
+                        <div class="pedi--user">
+                            <img src="../../image/user.jpeg">
+                            <div class="nomes">
+                                Cleito Suarez
+                                <br>
+                                <span>Nome do Evento</span>
+                            </div>
+                            <br>
+                        </div>
+
+                        <div class="pedi--user--bx">
+                            <img src="../../image/user.jpeg">
+                            <div class="nomes">
+                                Cleito Suarez
+                                <br>
+                                <span>Nome do Evento</span>
+                            </div>
+                            <br>
+                        </div>
+
+                        <div class="pedi--user">
+                            <img src="../../image/user.jpeg">
+                            <div class="nomes">
+                                Cleito Suarez
+                                <br>
+                                <span>Nome do Evento</span>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container--inferior">
+                <div class="card--container">
+                    <h3 class="main--title">
+                        Eventos
+                    </h3>
+
+                    <div class="events--list">
+                        <div class="evento" th:each="usuario : ${usuario}">
+                            <img src="../../image/user.jpeg">
+                            <div class="nomes">
+                                Cleito Suarez
+                                <br>
+                                <span>Nome do Evento</span>
+                            </div>
+                            <br>
+                        </div>
+
+                       
+
+                       
+                    </div> 
+                </div>
+
+                <div class="main--coments">
+                    <div class="coment">
+                        <h1>Comentarios</h1>
+                        <div class="coment--info">
+                            <div class="nomes">
+                                Comentario
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>

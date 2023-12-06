@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Evento</title>
+        <link rel="stylesheet" href="../../css/style4.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logo"></div>
+            <ul class="menu">
+                <li>
+                    <a th:href="@{/uniao-voluntaria/home}">
+                        <ion-icon name="home"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a th:href="@{/uniao-voluntaria/evento}">
+                        <ion-icon name="calendar"></ion-icon>
+                        <span>Eventos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a th:href="@{/uniao-voluntaria/pedido}">
+                        <ion-icon name="mail-unread"></ion-icon>
+                        <span>Pedidos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a th:href="@{/uniao-voluntaria/contact}">
+                        <i class='bx bx-support icon'></i>
+                        <span>Fale conosco</span>
+                    </a>
+                </li>
+
+                <li class="sair">
+                    <a th:href="@{/uniao-voluntaria/index}">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                        <span>Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main--content">
+            <div class="header--wrapper">
+                <div class="searh--box">
+                    <input type="tect" placeholder="Pesquisar">
+                    <ion-icon name="search"></ion-icon>
+                </div>
+                <div class="user--info--perfil">
+                    <ion-icon name="notifications"></ion-icon>
+                    <a th:href="@{/uniao-voluntaria/perfil}"><img src="../../image/no-profile-picture-15257.png" alt=""></a>
+                </div>
+            </div>
+            <section>
+                <div class="container">
+                    <div class="header">
+                        <span>Cadastro de Eventos</span>
+                        <a th:href="@{/uniao-voluntaria/event/novo-evento}" id="new">Incluir</a>
+                    </div>
+
+                    <div class="divTable">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Data</th>
+                                    <th>Hora</th>
+                                    <th>Vagas</th>
+                                    <th>Nuemro</th>
+                                    <th>Status</th>
+                                    <th>Editar</th>
+                                    <th>Excluir</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr th:each="evento : ${evento}">
+                                    <td th:text="${evento.nome}"></td>
+                                    <td th:text="${evento.data}"></td>
+                                    <td th:text="${evento.horaInicio}"></td>
+                                    <td th:text="${evento.vagas}"></td>
+                                    <td th:text="${evento.numero}"></td>
+                                    <td th:text="${evento.statusEvento}"></td>
+                                    <td><a th:href="@{/uniao-voluntaria/event/editar-evento/{id}(id=${evento.id})}"><ion-icon name="pencil-outline" ></ion-icon></a></td>
+                                    <td><a th:href="@{/uniao-voluntaria/event/delete/{id}(id=${evento.id})}" class="excluir"><ion-icon name="trash-outline"></ion-icon></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+             
+                          
+                </div>
+            </section>
+        </div>
+
+        <script>
+			const modal = document.querySelector('.modal-container')
+			const tbody = document.querySelector('tbody')
+			const sNome = document.querySelector('#m-nome')
+			const sFuncao = document.querySelector('#m-funcao')
+			const sSalario = document.querySelector('#m-salario')
+			const btnSalvar = document.querySelector('#btnSalvar')
+			
+			let itens
+			let id
+
+			function openModal(edit = false, index = 0) {
+			  modal.classList.add('active')
+			
+			  modal.onclick = e => {
+			    if (e.target.className.indexOf('modal-container') !== -1) {
+			      modal.classList.remove('active')
+			    }
+			    }
+			
+			    if (edit) {
+			        sNome.value = itens[index].nome
+			        sFuncao.value = itens[index].funcao
+			        sSalario.value = itens[index].salario
+			        id = index
+			      } else {
+			        sNome.value = ''
+			        sFuncao.value = ''
+			        sSalario.value = ''
+			      }
+			}
+		</script>
+    </body>
+</html>
+
+<!--th:href="@{/comercio/produto/novo-user}"-->

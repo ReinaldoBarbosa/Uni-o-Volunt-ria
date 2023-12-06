@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    display: flex;
+}
+
+.sidebar
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    height: 100vh;
+    padding: 0 1.7em;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: #24AD7F;
+}
+
+.logo
+{
+    height: 80px;
+    padding: 16px;
+}
+
+.menu 
+{
+    height: 88px;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    top: 20%;
+}
+
+.menu li
+{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover,
+.active
+{
+    background: #28c08d;
+}
+
+.menu a
+{
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu a span
+{
+    overflow: hidden;
+}
+
+.menu a i, ion-icon
+{
+    font-size: 1.5rem;
+}
+
+.menu .sair
+{
+    margin-top: 130%;
+}
+
+.head--user
+{
+    margin-left:3rem ;
+}
+
+.user
+{
+    display: flex;
+    margin-top: 30px;
+}
+
+.user h2
+{
+    margin-left: -15px;
+    margin-top: 30px;
+}
+
+.lin
+{
+    width: 1px;
+    height: 226px;
+    background: #BABABA;
+    margin-left: 20px;
+}
+
+.lin-h
+{
+    width: 1500px;
+    height: 2px;
+    background: #BABABA;
+margin-top:3rem;
+
+}
+
+.num--publi
+{
+    background: #EAEAEA;
+    height: 40px;
+    width: 140px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+.num--publi p{
+    text-align: center;
+    margin-top: 7px;
+}
+
+.num--follow
+{
+    background: #EAEAEA;
+    height: 40px;
+    width: 140px;
+    margin-left: 250px;
+    border-radius: 10px;
+}
+
+.num--follow p
+{
+    text-align: center;
+    margin-top: 7px;
+}
+
+.num--subs
+{
+    background: #EAEAEA;
+    height: 40px;
+    width: 140px;
+    margin-left: 250px;
+    border-radius: 10px;
+}
+
+.num--subs p
+{
+    text-align: center;
+    margin-top: 7px;
+}
+
+.dados--ong
+{
+    display: flex;
+    position: absolute;
+    margin-left: 15rem;
+    margin-top: 3.5rem;
+}
+
+.dados--ong p
+{
+    margin-left: -8rem;
+    margin-top: 2.5rem;
+}
+
+.contato
+{
+    display: flex;
+    position: absolute;
+    margin-left: 39rem;
+    margin-top: 3.5rem;
+}
+
+.contato p
+{
+    margin-left: -11rem;
+    margin-top: 2.5rem;
+}
+
+.bio
+{
+    display: flex;
+    position: absolute;
+    margin-left: 60rem;
+    margin-top: 3.5rem;
+}
+
+.edit 
+{
+   background: #30CE99;
+   border-radius: 20px;
+   width: 184px;
+   height: 38px;
+   top: 200px;
+   left: -920px;
+   position: relative;
+   text-align: center;
+}
+.edit p
+{
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.edit a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.share
+{
+    background: #30CE99;
+   border-radius: 20px;
+   width: 184px;
+   height: 38px;
+   top: 200px;
+   left: -720px;
+   position: relative;
+   text-align: center;
+}
+
+.share p
+{
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.share a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.opcoes
+{
+    width: 55rem;
+    margin-left: 10rem;
+    justify-content: space-between;
+    display: flex;
+}
+
+.opcoes a
+{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    margin: auto;
+    padding: auto;
+    margin-left: 23%;
+    color: black;
+}
+
+
+
+.grafic
+{
+
+    width: 62rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    justify-content: space-between;
+    display: flex;
+}
+
+.img
+{
+    display: flex;
+}
+
+.img img
+{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+  }
+  
+  .modal img {
+    width: 100%;
+  }
+  
+  .modal input {
+    width: 100%;
+    outline: none;
+    padding: 5px 10px; 
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  
+  .modal .button {
+    width: 100%;
+    margin: 10px auto;
+    outline: none;
+    border-radius: 20px; 
+    padding: 5px 10px; 
+    width: 100%;
+    border: none;
+    background-color: #32be8f;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .modal button:hover
+  {
+    background-color: #0ae29a;
+  }
+  
+  .active {
+    display: flex;
+  }
+  
+  .active .modal {
+    animation: modal .4s;
+  }

@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    display: flex;
+}
+
+.sidebar
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    height: 100vh;
+    padding: 0 1.7em;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: #24AD7F;
+}
+
+.logo
+{
+    height: 80px;
+    padding: 16px;
+}
+
+.menu 
+{
+    height: 88px;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    top: 20%;
+}
+
+.menu li
+{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover,
+.active
+{
+    background: #28c08d;
+}
+
+.menu a
+{
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu a span
+{
+    overflow: hidden;
+}
+
+.menu a i, ion-icon
+{
+    font-size: 1.5rem;
+}
+
+.menu .sair
+{
+    margin-top: 130%;
+}
+
+
+/* Main body section */
+
+.main--content
+{
+    position: relative;
+    background: #f9f9f9;
+    width: 100%;
+}
+
+.header--wrapper img
+{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.header--wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 10px;
+}
+
+.searh--box
+{
+    width: 50%;
+    background: #ebe9e9;
+    border-radius: 15px;
+    color: #3a3a3a;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+    margin-left: 2rem;
+}
+
+.searh--box input
+{
+    background: transparent;
+    margin-left: 3%;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.searh--box ion-icon
+{
+    position: relative;
+    margin-left: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.searh--box ion-icon:hover
+{
+    transform: scale(1.2);
+}
+
+.user--info
+{
+    display: flex;
+    align-items: center;
+    gap: 1;
+    margin-right: 2rem;
+}
+
+.user--info ion-icon
+{
+    font-size: 1.8rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+
+/** Conteudo da tela */
+
+.container--superior
+{
+    
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5px;
+ 
+}
+
+.container--superior .card--container
+{
+    position: relative;
+    display: grid;
+    min-width: 400px;
+    min-height: 400px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.09);
+    margin: 1.5rem;
+}
+
+
+
+.card--wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.main--title
+{
+    width: 303px;
+    color: #3a3a3a;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+p
+{
+    display: flex;
+    position: relative;
+    color: #3a3a3a;
+    margin-left: 1rem;
+   
+}
+
+.card--wrapper
+{
+    position: relative;
+    width: 1100px;
+    height: 220px;
+    margin-left: 1rem;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+}
+
+.card--wrapper .card
+{
+    position: relative;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 7px 35px rgba(0, 0, 0, 0.08);
+}
+
+.card--wrapper .card .name
+{
+    position: relative;
+    padding: auto;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #28c08d;
+}
+
+.card--wrapper .card .numbers span
+{
+
+    width: 50px;
+    font-size:2.5em;
+    margin-top: 23px;
+}
+
+.card--wrapper .card .numbers
+{
+    margin: auto;
+    margin-top: 3rem;
+    color: #313131;
+}
+
+.container--superior .soli--list
+{
+    position: relative;
+    display: grid;
+    min-width: 400px;
+    min-height: 400px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.09);
+    margin: 1.5rem;
+}
+
+.inscricao {
+    display: grid;
+    border-radius: 25px;
+    gap: 10px;
+}
+
+.soli--list .pedi--user
+{
+    display: flex;
+    height: 5.5rem;
+    background: #30CE99;
+    border-radius: 15px;
+}
+
+.soli--list .pedi--user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    margin-left: 1rem;
+    margin-top: 10px;
+}
+
+.soli--list .pedi--user .nomes 
+{
+    display: block;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 8px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.soli--list .pedi--user .nomes span 
+{
+    display: flex;
+    font-size: 15px;
+    color: #fafafa;
+    font-weight: 400;
+}
+
+.soli--list .pedi--user--bx
+{
+    display: flex;
+    height: 5.5rem;
+    background: #F4F4F4;
+    border-radius: 15px;
+}
+
+.soli--list .pedi--user--bx img {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    margin-left: 1rem;
+    margin-top: 10px;
+}
+
+.soli--list .pedi--user--bx .nomes 
+{
+    display: block;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 8px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.soli--list .pedi--user--bx .nomes span 
+{
+    display: flex;
+    font-size: 15px;
+    color: #8b8b8b;
+    font-weight: 400;
+}
+
+.container--inferior
+{
+    
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5px;
+}
+
+.container--inferior .card--container
+{
+    position: relative;
+    display: grid;
+    min-width: 400px;
+    min-height: 400px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.09);
+    margin: 1.5rem;
+}
+
+.events--list {
+    display: grid;
+    border-radius: 25px;
+    grid-gap: 15px;;
+}
+
+.events--list .evento
+{
+    display: flex;
+    width: 69rem;
+    height: 5.5rem;
+    background: #30CE99;
+    border-radius: 15px;
+}
+
+.events--list .evento img {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    margin-left: 1rem;
+    margin-top: 10px;
+}
+
+.events--list .evento .nomes 
+{
+    display: block;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.events--list .evento .nomes .descri 
+{
+    display: flex;
+    font-size: 15px;
+    color: #fafafa;
+    font-weight: 400;
+}
+
+.events--list .evento--bx
+{
+    display: flex;
+    width: 69rem;
+    height: 5.5rem;
+    background: #F4F4F4;
+    border-radius: 15px;
+}
+
+.events--list .evento--bx img {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    margin-left: 1rem;
+    margin-top: 10px;
+}
+
+.events--list .evento--bx .nomes 
+{
+    display: block;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 8px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.events--list .evento--bx .nomes span 
+{
+    display: flex;
+    font-size: 15px;
+    color: #8b8b8b;
+    font-weight: 400;
+}
+
+.container--inferior .main--coments
+{
+    position: relative;
+    display: grid;
+    min-width: 400px;
+    min-height: 400px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.09);
+    margin: 1.5rem;
+}
+
+.coment {
+    display: grid;
+    border-radius: 25px;
+    gap: 10px;
+}
+
+.coment .coment--info
+{
+    display: flex;
+    position: absolute;
+    width: 27rem;
+    height: 10rem;
+    background: #F3F3F3;
+    margin-top: 3.5rem;
+    border-radius: 15px;
+}
+
+
+.coment .coment--info .nomes 
+{
+    display: block;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 8px;
+    color: #858585;
+    font-weight: 600;
+}
+
+

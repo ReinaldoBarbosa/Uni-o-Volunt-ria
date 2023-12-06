@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sidebar
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    height: 100vh;
+    padding: 0 1.7em;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: #24AD7F;
+}
+
+.logo
+{
+    height: 80px;
+    padding: 16px;
+}
+
+.menu 
+{
+    height: 88px;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    top: 20%;
+}
+
+.menu li
+{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover,
+.active
+{
+    background: #28c08d;
+}
+
+.menu a
+{
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu a span
+{
+    overflow: hidden;
+}
+
+.menu a i, ion-icon
+{
+    font-size: 1.5rem;
+}
+
+.user
+{
+    display: flex;
+    margin-left: -120px;
+    margin-top: 30px;
+}
+
+.user h2
+{
+    margin-left: -15px;
+    margin-top: 30px;
+}
+
+.lin
+{
+    width: 1px;
+    height: 226px;
+    background: #BABABA;
+    margin-left: 20px;
+}
+
+.lin-h
+{
+    width: 1500px;
+    height: 2px;
+    background: #BABABA;
+margin-top:3rem;
+margin-left: -7rem;
+}
+
+.num--publi
+{
+    background: #EAEAEA;
+    height: 40px;
+    width: 140px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+.num--publi p{
+    text-align: center;
+    margin-top: 7px;
+}
+
+.num--follow
+{
+    background: #EAEAEA;
+    height: 40px;
+    width: 140px;
+    margin-left: 250px;
+    border-radius: 10px;
+}
+
+.num--follow p
+{
+    text-align: center;
+    margin-top: 7px;
+}
+
+.num--subs
+{
+    background: #EAEAEA;
+    height: 40px;
+    width: 140px;
+    margin-left: 250px;
+    border-radius: 10px;
+}
+
+.num--subs p
+{
+    text-align: center;
+    margin-top: 7px;
+}
+
+.dados--ong
+{
+    display: flex;
+    position: absolute;
+    margin-left: 15rem;
+    margin-top: 3.5rem;
+}
+
+.dados--ong p
+{
+    margin-left: -8rem;
+    margin-top: 2.5rem;
+}
+
+.contato
+{
+    display: flex;
+    position: absolute;
+    margin-left: 39rem;
+    margin-top: 3.5rem;
+}
+
+.contato p
+{
+    margin-left: -11rem;
+    margin-top: 2.5rem;
+}
+
+.bio
+{
+    display: flex;
+    position: absolute;
+    margin-left: 60rem;
+    margin-top: 3.5rem;
+}
+
+.edit 
+{
+   background: #30CE99;
+   border-radius: 20px;
+   width: 184px;
+   height: 38px;
+   top: 200px;
+   left: -920px;
+   position: relative;
+   text-align: center;
+}
+.edit p
+{
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.edit a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.share
+{
+    background: #30CE99;
+   border-radius: 20px;
+   width: 184px;
+   height: 38px;
+   top: 200px;
+   left: -720px;
+   position: relative;
+   text-align: center;
+}
+
+.share p
+{
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.share a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.opcoes
+{
+    width: 55rem;
+    margin-left: 10rem;
+    justify-content: space-between;
+    display: flex;
+}
+
+.opcoes a
+{
+    color: black;
+}
+
+.grafic
+{
+
+    width: 62rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    justify-content: space-between;
+    display: flex;
+}
+/*Perfil-Coments*/
+.coment
+{
+    display: flex;
+
+    align-items: center;
+    border-radius: 20px;
+    background: #F3F3F3;
+    font-size: 20px;
+    width: 400px;
+    height: 126px;
+}
+
+.texbox textarea
+{
+    width: 480px;
+    height: 152px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #EFEFEF;
+    resize: none; 
+   font-size: large;
+}
+
+.mae
+{
+margin-top: 5%;
+ display: flex;
+ flex-wrap: wrap;
+width: 80%;
+height: auto;
+display: grid;
+grid-template-columns: auto auto;
+margin-left: 9%;
+
+}
+
+.publicar input[type="submit"]
+{
+    background: #30CE99;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    display: flex;
+    width: 250px;
+    height: 50px;
+    justify-content: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+
+}
+
+/*Perfil-Eventos*/ 
+
+.evento
+{
+    background-color: #30CE99;
+    display: inline-flex;
+    border-radius: 20px;
+    width: 30rem;
+    height: 4rem;
+    margin: 20px -20px 30px -50px;
+    
+}
+
+.evento img
+{
+    display: block;
+    position: absolute;
+}
+
+.evento a
+{
+ margin-left: 20px;
+ margin-top: 5px;
+}
+
+.hs
+{
+    margin-left: 4rem;
+   justify-content: left;
+}
+
+/*View-Evento*/ 
+
+.topo
+{
+    position: absolute;
+    top: 4%;
+    left: 16%;
+    transform: translate(-2%, -20%);
+    display: flex;  
+    align-items: center;
+ 
+}
+
+.caixa-pesquisa
+{
+
+
+background: rgba(196, 196, 196, 1);
+width: 680px;
+height: 60px;
+padding: 10px;
+border-radius: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.pesquisa
+{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 10px;
+    width: 100%;
+}
+
+.botao
+{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.not
+{
+    position: relative;
+    left: 85%;
+}
+
+.perfil
+{
+    position: relative;
+    left: 89%;
+    align-items: center;
+     justify-content: center;
+}
+
+.container1
+{
+    background-color: rgba(36, 173, 127, 0.47);
+    width:83% ;
+    height: 88%;
+    border-radius: 10px;
+    top: 11%;
+    left: 15%;
+    position: absolute;
+    display: flex;
+}
+
+.detalhes p
+{
+    width: 70% ;
+}
+
+.vertical-line
+     {
+        border-left: 2px solid #000; /* Cor e largura da linha */
+        height: 100%; /* Altura da linha (pode ser ajustada conforme necessário) */
+        margin: 0 20px ; /* Margem para separação entre as seções */
+        position: absolute;
+        margin-left: 50%;
+        height: 730px;
+    }
+
+.container2
+{   
+    background-color: white;
+    padding: 20px;
+    width: 90%;
+    height: 90%;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    top: 5%;
+    left: 5%;
+    position: absolute;
+    display: flex;
+}
+
+.conteudo
+{
+    display: flex;
+}
+
+.sim
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo2
+{
+    width: 100%;
+    margin-right: 2%;
+}
+.conteudo2 img
+{
+    margin-left: 10%;
+ 
+}
+
+.fotos-evento
+{
+    margin-top: 20%;
+}

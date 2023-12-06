@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../Css/style5.css">
+    <script src="../JS/codigo.js" type="text/javaScript"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <div class="sidebar">
+            <div class="logo"></div>
+            <ul class="menu">
+                <li>
+                    <a th:href="@{/uniao-voluntaria/home}">
+                        <ion-icon name="home"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a th:href="@{/uniao-voluntaria/evento}">
+                        <ion-icon name="calendar"></ion-icon>
+                        <span>Eventos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a th:href="@{/uniao-voluntaria/pedido}">
+                        <ion-icon name="mail-unread"></ion-icon>
+                        <span>Pedidos</span>
+                    </a>
+                </li>
+
+                <li  class="active">
+                    <a th:href="@{/uniao-voluntaria/contact}">
+                        <i class='bx bx-support icon'></i>
+                        <span>Fale conosco</span>
+                    </a>
+                </li>
+
+                <li class="sair">
+                    <a th:href="@{/uniao-voluntaria/index}">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                        <span>Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Fale Conosco</h2>
+            <p>Caso duvidas ou o site apresenatar algum erro.</p>
+        </div>
+
+        <div class="content">
+            <div class="formBx">
+                <form action="mailto:marianne.cichy@docente.fieb.edu.br" method="post">
+                    <h3>Mensagem</h3>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="Nome" placeholder="Nome" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <input type="text" name="Assunto" placeholder="Assunto" required>
+                    <textarea name="Mensagem" placeholder="Mensagem" required></textarea>
+                    <input type="hidden" name="_next" value="obrigado.html">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

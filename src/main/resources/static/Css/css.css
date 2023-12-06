@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    display: flex;
+}
+
+.sidebar
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    height: 100vh;
+    padding: 0 1.7em;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: #24AD7F;
+}
+
+.logo
+{
+    height: 80px;
+    padding: 16px;
+}
+
+.menu 
+{
+    height: 88px;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    top: 20%;
+}
+
+.menu li
+{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover,
+.active
+{
+    background: #28c08d;
+}
+
+.menu a
+{
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu a span
+{
+    overflow: hidden;
+}
+
+.menu a i, ion-icon
+{
+    font-size: 1.5rem;
+}
+
+.menu .sair
+{
+    margin-top: 130%;
+}
+
+.main--content
+{
+    position: relative;
+    background: #f9f9f9;
+    width: 100%;
+}
+
+.header--wrapper img
+{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.header--wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 10px;
+}
+
+.searh--box
+{
+    width: 50%;
+    background: #ebe9e9;
+    border-radius: 15px;
+    color: #3a3a3a;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+    margin-left: 2rem;
+}
+
+.searh--box input
+{
+    background: transparent;
+    margin-left: 3%;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.searh--box ion-icon
+{
+    position: relative;
+    margin-left: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.searh--box ion-icon:hover
+{
+    transform: scale(1.2);
+}
+
+.user--info--perfil
+{
+    display: flex;
+    align-items: center;
+    gap: 1;
+    margin-right: 2rem;
+}
+
+.user--info--perfil ion-icon
+{
+    font-size: 1.8rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.container{
+    height: 80vh;
+    border-radius: 10px;
+    background:  #24ad7fc1;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.user-info{
+    display: flex;
+    flex-direction: column;
+    width: 84.4vw;
+    height: 100vh;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #ffffff;
+    
+}
+.container-img{
+    height: 50vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-img input{
+    height: 0px;
+    width: 0px;
+}
+
+.icon{
+    font-size: 5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.icon1{
+    font-size:large;
+    position: absolute;
+    left:580px;
+    top: 30px;
+}
+.icon2{
+    font-size:1.6rem;
+    position: absolute;
+    right:120px;
+    cursor: pointer;
+    top: 30px;
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 50%;
+    z-index: 1;
+  }
+.modal .header
+{
+    display: flex;
+    width: 100%;
+
+}
+  .modal .header h1
+  {
+  
+    margin-left:2rem ;
+  }
+
+  .modal .header p
+  {
+
+    margin-left:2rem ;
+  }
+  
+  .modal .header img {
+    width: 300px;
+    border-radius:20px ;
+  }
+  
+  .modal .main--op
+  {
+    grid-gap: 1rem;
+  }
+
+  .active {
+    display: flex;
+  }
+  
+  .active .modal {
+    animation: modal .4s;
+  }
+
+.btn{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(to left, #2b6c57, #12d695);
+    color: white;
+}
+.btn1{
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+}
+.btn2{
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+}
+.icon3{
+    font-size:1.6rem;
+    position: absolute;
+    right:200px;
+    cursor: pointer;
+    top: 30px;
+}
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 40vh;
+    width: 20vw;
+    gap: 15px;
+}
+.container--list--soli{
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    justify-content: space-between;
+    position: relative;
+    
+}
+.container--list h1{
+   margin-bottom: 30px;
+   position: relative;
+}
+
+
+
+.inscricao
+{
+    display: grid;
+    background: #ffffff;
+    width: 50%;
+    height: 95%;
+    margin-left: 50px;
+    margin-top: 15px;
+    margin: 1rem;
+    padding: 30px;
+    border-radius: 25px;
+    gap: 10px;
+}
+
+.pedi--user
+{
+    display: flex;
+    height: 4.5rem;
+    background: #30CE99;
+    border-radius: 15px;
+}
+
+.pedi--user img
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    margin-left: 1rem;
+    margin-top: 5px;
+}
+
+.pedi--user .nomes
+{
+    display: block;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.pedi--user .nomes span
+{
+    display: flex;
+    font-size: 15px;
+    color: #EAEAEA;
+    font-weight: 400;
+}
+
+.pedi--user--bx
+{
+    display: flex;
+    height: 4.5rem;
+    background: #F4F4F4;
+    border-radius: 15px;
+}
+
+.pedi--user--bx img
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    margin-left: 1rem;
+    margin-top: 5px;
+}
+
+.pedi--user--bx .nomes
+{
+    display: block;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.pedi--user--bx .nomes span
+{
+    display: flex;
+    font-size: 15px;
+    color: #0a0a0a;
+    font-weight: 400;
+}
+
+.inscricao
+{
+    display: grid;
+    background: #ffffff;
+    width: 45%;
+    height: 95%;
+    margin-left: 50px;
+    margin-top: 15px;
+    margin: 1rem;
+    padding: 30px;
+    border-radius: 25px;
+    gap: 10px;
+}
+
+.pedido
+{
+    display: grid;
+    background: #ffffff;
+    width: 50%;
+    height: 95%;
+    margin-top: 15px;
+    margin: 1rem;
+    padding: 30px;
+    border-radius: 25px;
+    gap: 10px;
+}
+
+.container--list h1::before{
+    content: "";
+    width: 140px;
+    height: 3px;
+    background-color: #24AD7F;
+    position: absolute;
+    bottom: 0px;
+ }
+
+.form div{
+    width: 200px;
+}
+
+
+.input{
+    height: 30px;
+    padding-left: 10px ;
+    width: 180px;
+    border-radius: 5px;
+    border: 2px solid rgb(203, 201, 201);
+}
+.textarea{
+    height: 80px;
+    padding-left: 10px;
+    width: 500px;
+    border-radius: 5px;
+    border: 2px solid rgb(203, 201, 201);
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+a
+{
+    text-decoration: none;
+}
+

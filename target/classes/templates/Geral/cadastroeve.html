@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CADASTRO</title>
+        <link rel="stylesheet" href="../../css/cada.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="https://kit.fontawesome.com/ae37c4f9c1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+        <div class="sidebar">
+            <div class="logo"></div>
+            <ul class="menu">
+                <li class="active">
+                    <a href="">
+                        <ion-icon name="home"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <ion-icon name="calendar"></ion-icon>
+                        <span>Eventos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <ion-icon name="mail-unread"></ion-icon>
+                        <span>Pedidos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        <i class='bx bx-support icon'></i>
+                        <span>Fale conosco</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+        <main>
+            <div class="user-info">
+                <div class="searh-box">
+                    <input type="search" name="search" id="search" placeholder="Pesquisar"><i class="fa-solid fa-magnifying-glass icon1"></i>
+                    <i class="fa-solid fa-user icon2"></i>
+                    <i class="fa-solid fa-bell icon3"></i>
+                </div>
+                <form method="post">
+                <div class="container-form">
+                    <div class="container">
+                         <h1>Editar Evento</h1>
+                        <div class="form">
+                          <div>
+                            <label for="nome" >Nome do evento</label>
+                            <br>
+                            <input type="text" class="input" placeholder="Digite o nome" id="nome" required>
+                        </div>
+                        <div>
+                            <label for="date">Data</label>
+                            <br>
+                            <input type="date" class="input" placeholder="Digite a data" id="date" required>
+                        </div>
+                        <div>
+                            <label for="type">Tipo</label>
+                            <br>
+                            <input type="text" class="input" placeholder="Digite o tipo" id="type" required> 
+                        </div>
+                        <div>
+                            <label for="local">Local</label>
+                            <br>
+                            <input type="text" class="input" placeholder="Digite o local" id="local" required>
+                        </div>
+                        <div>
+                            <label for="hora">Hora</label>
+                            <br>
+                            <input type="time" class="input" placeholder="Digite a hora" id="hora" required>
+                        </div>
+                        <div>
+                            <label for="status">Status</label>
+                            <br>
+                            <input type="text" class="input" placeholder="Digite o status" id="status" required>
+                        </div>
+                        <div>
+                            <label for="information">Informações</label>
+                            <br>
+                            <input type="text" class="text" placeholder="Digite as descrições do Evevnto">                        
+                        </div>
+                        <div class="container-btn">
+                            <input type="submit" value="Salvar" class="btn btn1">
+                            <button type="submit" class="btn btn2"> Excluir</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="container-img">
+                        <label for="imageInput">
+                            Adicionar Imagem
+                            <br>
+                            <i class="fa-regular fa-images icon"></i>
+                        </label>
+                        <input type="file" id="imageInput" accept="image/*" required>
+                        <div id="imageContainer"> </div>
+                    </div>
+                </div>
+            </form>
+            </div>
+            <script>
+               const imageInput = document.getElementById('imageInput');
+               const imageContainer = document.getElementById('imageContainer');
+
+                imageInput.addEventListener('change', function() {
+                const file = imageInput.files[0];
+
+                if (file) {
+                    const image = new Image();
+                    image.src = URL.createObjectURL(file);
+                    image.onload = function() {
+                    imageContainer.innerHTML = '';
+                    imageContainer.appendChild(image); 
+                    image.style.width = '350px';
+                    image.style.height = '150px';
+                    image.style.borderRadius = '15px';
+                    };
+                } else {
+                    imageContainer.innerHTML = 'Selecione uma imagem'; 
+                }
+                });
+
+            </script>
+        </main>
+    </body>
+</html>

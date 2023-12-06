@@ -1,0 +1,999 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+section
+{
+    padding: 100px;
+}
+
+.wrapper
+{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    max-width: 365px;
+    background: #2196f3;
+    text-align: center;
+    border-radius: 15px;
+    padding: 25px 25px 30px 25px;
+    transition: right 0.3s ease;
+    z-index: 10;
+}
+
+.wrapper.hide
+{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.wrapper img
+{
+    max-width: 90px;
+}
+
+.wrapper .contentCokie
+{
+    margin-top: 10px;
+}
+
+.contentCokie h3
+{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.contentCokie p
+{
+    color: #f7f7f7;
+    margin: 5px 0 20px 0;
+}
+.contentCokie .buttons
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons .item
+{
+    margin: 0 10px;
+}
+
+.buttons button
+{
+    padding: 10px 20px;
+    background: #fcba7f;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.buttons a
+{
+    color: #fcba7f;
+}
+
+
+.banner
+{
+    position: relative;
+    min-height: 100vh;
+    background: url(/Image/fundo\ 1.png);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+}
+
+.volunter
+{
+    position: relative;
+    min-height: 100vh;
+    background: url(/Image/fundo3.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+}
+
+.volunter.ong
+{
+    position: relative;
+    min-height: 100vh;
+    background: url(Image/fundo2.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+}
+
+.volunter h2
+{
+    font-size: 3em;
+    color: #24AD7F;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2
+{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 span
+{
+    font-size: 1.2em;  
+    font-weight: 700;
+}
+
+.banner h3
+{
+    font-size: 1.3em;
+    color: #24AD7F;
+    font-weight: 500;
+}
+
+.volunter h2 span
+{
+    font-size: 1.2em;  
+    font-weight: 700;
+}
+
+.volunter h3
+{
+    font-size: 1.3em;
+    color: #ffffff;
+}
+
+.btn
+{
+    position: relative;
+    background: #24AD7F;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.toggle ul ul
+{
+    position: absolute;
+    left: -1em;
+    line-height: 2em;
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    z-index: 1;
+    display: none;
+}
+
+.toggle ul ul li a
+{
+    padding: 0.25em 1em;
+}
+
+.toggle ul ul li.current a
+{
+    background-color: var(--border-color);
+}
+
+.toggle li:hover ul
+{
+    display: block;
+}
+
+header.sticky
+{
+    background: #24AD7F;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}   
+
+
+
+header .logo   
+{
+    width: 150px;
+}
+
+header.sticky .logo
+{
+    color: #ffffff;
+}
+
+header ul
+{
+    position: relative;
+    display: flex;
+}
+
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a
+{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header.sticky ul li a
+{
+    color: #ffffff;
+}
+
+
+.heading
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.heading h2
+{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+.about
+{
+    position: relative;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+}
+
+.about .main--info
+{
+    display:flex;
+    min-height: 100vh;
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 50%;
+    z-index: 1;
+  }
+.modal .header
+{
+    display: flex;
+    width: 100%;
+
+}
+  .modal .header h1
+  {
+  
+    margin-left:2rem ;
+  }
+
+  .modal .header p
+  {
+
+    margin-left:2rem ;
+  }
+  
+  .modal .header img {
+    width: 300px;
+    border-radius:20px ;
+  }
+  
+  .modal .main--op
+  {
+    grid-gap: 1rem;
+  }
+
+  .active {
+    display: flex;
+  }
+  
+  .active .modal {
+    animation: modal .4s;
+  }
+
+.fomezero .contentBox
+{
+    width: 100%;
+}
+.content
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentBx.w50
+{
+    width: 50px;
+    padding-right: 30px;
+}
+
+.contentBx h3
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.w50
+{
+    min-width: 50%;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+.services
+{
+    background: #ffffff;
+}
+
+.heading.white
+{
+    color: #000000;
+}
+
+.services .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .content a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.services .content .servicesBx
+{
+    padding: 40px 20px;
+    background: #F4F4F4;
+    color: #000;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+
+.services .content .servicesBx img
+{
+    max-width: 200px;
+}
+
+.services .content .servicesBx h2
+{
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.services .content .servicesBx .btn
+{
+    color: #ffffff;
+}
+
+.work .content
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.work .content .workBx
+{
+    width: 50%;
+    padding: 20px;
+}
+
+.work .content .workBx img
+{
+    max-width: 100%;
+}
+
+.testimonial
+{
+    background: #f7f7f7;
+}
+
+.content a
+{
+    text-decoration: none;
+}
+
+
+.content h2
+{
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+}
+
+.testimonial .content
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testimonial img
+{
+    width: 50em;
+}
+
+.testimonial .content .testimonialBx
+{
+    max-width: calc(50% - 40px);
+    padding: 60px 40px;
+    margin: 20px;
+    background: #2196f3;
+}
+
+.testimonial .content .testimonialBx p
+{
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.testimonial .content .testimonialBx h3
+{
+    margin-top: 40px;
+    text-align: end;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+.testimonial .content .testimonialBx h3 span
+{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.contact
+{
+    background: #111;
+}
+
+.formBx
+{
+    min-width: 60%;
+}
+
+.formBx form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.formBx form h3,
+.contactInfo h3
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formBx form input,
+.formBx form textarea
+{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #222;
+    color: #fff;
+    resize: none;
+}
+
+
+
+.formBx form textarea
+{
+    min-height: 200px;
+}
+
+.formBx form input::placeholder,
+.formBx form textarea::placeholder
+{
+    color: #999;
+}
+
+.formBx form input[type="submit"]
+{
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contactInfo 
+{
+    min-width: 40%;
+}
+
+.contactInfoBx
+{
+    position: relative;
+}
+
+.contactInfoBx .formBx
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactInfoBx .box .icon
+{
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+
+.contactInfoBx .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+    
+}
+
+.contactInfoBx .box .text h3
+{
+     font-weight: 500;
+     color: #2196f3;
+     margin-bottom: 0;
+}
+
+.footer
+{
+    display: flex;
+    position: relative;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+
+.footer .txtbx h3
+{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 1em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.footer .tilte
+{
+    color: #fff;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.footer .nomes
+{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #fff;
+    resize: none;
+}
+
+.onu
+{
+    background: #c0c0c0;
+}
+
+.agenda
+{
+    position: relative;
+    min-height: 100vh;
+    background: url(../img/20302.jpg);
+    background-size: cover;
+    background-position: right;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+}
+
+.sustem
+{
+    position: relative;
+    min-height: 100vh;
+    background: url(../img/fundo3.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+}
+
+.sustem h2
+{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.sustem h2 span
+{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.sustem h3
+{
+    font-size: 1.3em;
+    color: #fff;
+  
+}
+.sus
+{
+    width: 100%;
+    background: #eeeeee;
+}
+.sus img
+{
+    display: flex;
+    margin-left: 20em;
+}
+
+.contentBx.sus
+{
+    margin-top: 5em;
+    font-size: 18px;
+}
+
+.container
+{
+    display: flex;
+}
+
+.container .imgcontainer
+{
+    width: 34.5em;
+    height: 100%;
+}
+.container .contentBx
+{
+    margin-top: 5em;
+    width: 40%;
+}
+
+.text .contentBx p
+{
+    margin-top: 1em;
+    font-size: 18px;
+}
+
+.politica
+{
+    background: #c0c0c0;
+}
+
+footer
+{
+    width: 100%;
+    background: #000;
+}
+.turma h3
+{
+
+    color: #fff;
+    text-align: center;
+}
+
+.nomes
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+}
+
+.analistas{
+   flex: 1;
+}
+.Programadores{
+  flex: 1;
+}
+
+/* Obrigado */
+
+.main
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #111;
+    flex-direction: column;
+}
+
+.texto
+{
+    font-size: 45px;
+    color: #f5f5f5;
+    margin-bottom: 50px;
+}
+
+.pag
+{
+    color: #f5f5f5;
+    margin-bottom: 50px;
+}
+
+.main .btn
+{
+    padding: 15px 55px;
+    background: #f5f5f5;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+.main .btn:hover
+{
+    background-color: #c0c0c0;
+}
+
+
+  
+
+/*Responsive*/
+
+
+@media (max-width: 991px)
+{
+    header,
+    header.sticky
+    {
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+
+    .menu
+    {
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .menu.active
+    {
+        left: 0;
+    }
+
+    header ul li a
+    {
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .toggle
+    {
+        width: 40px;
+        height: 40px;
+        background: url(images/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .toggle.active
+    {
+        background: url(images/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+
+    header.sticky .toggle
+    {
+        filter: invert(1);
+    }
+    
+    section
+    {
+        padding: 100px 50px;
+    }
+
+    .banner
+    {
+        
+        padding: 150px 50px 100px;
+    }
+
+    .banner h2
+    {
+        font-size: 1.5em;
+    }
+    .banner h3
+    {
+        font-size: 1em;
+    }
+    .btn
+    {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .heading h2
+    {
+        font-size: 24px;
+    }
+
+    .contentBx h3
+    {
+        font-size: 20px;
+    }
+
+    .content
+    {
+        flex-direction: column;
+    }
+    
+    .w50
+    {
+        margin-bottom: 50px;
+    }
+
+    .services .content .workBx
+    {
+        margin: 10px;
+    }
+
+    .work .content .workBx
+    {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .testimonial .content .testimonialBx
+    {
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 10px;
+        background: #2196f3;
+    }
+
+    .testimonial .content .testimonialBx h3
+    {
+        margin-top: 20px;
+    }
+
+    .contactInfo
+    {
+        min-width: 40%;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 600px)
+{
+    header,
+    header.sticky
+    {
+        padding: 20px 20px;
+    }
+
+    .banner
+    {
+        padding: 150px 20px 100px;
+    }
+
+    section
+    {
+        padding: 100px 20px;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=], initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>União Voluntaria</title>
+        <link rel="stylesheet" href="../../Css/style3.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" 
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="../JS/codigo.js" defer type="text/javaScript"></script>
+    </head>
+
+    <body>
+
+        <header>
+
+            <a th:href="@{/uniao-voluntaria/index}" class="logo"><img src="../image/Logo.png"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+                <ul class="menu">
+                    <li><a th:href="@{/uniao-voluntaria/voluntario}" onclick="toggleMenu();">Sou um Voluntario</a></li>
+                    <li><a th:href="@{/uniao-voluntaria/ong}" onclick="toggleMenu();">Sou uma Ong</a></li>
+                    <li><a th:href="@{/uniao-voluntaria/login}" onclick="toggleMenu();">Entrar</a></li>
+                </ul>
+
+        </header>
+
+        <section class="volunter ong" id="home">
+            <div class="textBx">
+                <h2><span>Venha Fazer Parte!<br></span></h2>
+                <h3>Divulgue seus trabalhos voluntarios de uma forma facil e rapida</h3>
+                <a th:href="@{/uniao-voluntaria/cadastro}" class="btn">Cadastrar minha Ong</a>
+            </div>
+        </section>
+    </body>
+</html>

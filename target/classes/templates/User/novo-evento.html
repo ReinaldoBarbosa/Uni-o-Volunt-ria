@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Evento</title>
+        <link rel="stylesheet" href="../../css/style4.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logo"></div>
+            <ul class="menu">
+                <li>
+                    <a th:href="@{/uniao-voluntaria/home}">
+                        <ion-icon name="home"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a th:href="@{/uniao-voluntaria/evento}">
+                        <ion-icon name="calendar"></ion-icon>
+                        <span>Eventos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a th:href="@{/uniao-voluntaria/pedido}">
+                        <ion-icon name="mail-unread"></ion-icon>
+                        <span>Pedidos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a th:href="@{/uniao-voluntaria/contact}">
+                        <i class='bx bx-support icon'></i>
+                        <span>Fale conosco</span>
+                    </a>
+                </li>
+
+                <li class="sair">
+                    <a th:href="@{/uniao-voluntaria/index}">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                        <span>Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main--content">
+            <div class="header--wrapper">
+                <div class="searh--box">
+                    <input type="tect" placeholder="Pesquisar">
+                    <ion-icon name="search"></ion-icon>
+                </div>
+                <div class="user--info--perfil">
+                    <ion-icon name="notifications"></ion-icon>
+                    <a th:href="@{/uniao-voluntaria/perfil}"><img src="../../image/no-profile-picture-15257.png" alt=""></a>
+                </div>
+            </div>
+            <section>
+                <div class="container">
+                    <div class="header">
+                        <span>Cadastro de Eventos</span>
+                        <a id="new">Incluir</a>
+                    </div>
+
+                    <div class="divTable">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Email</th>
+                                    <th>Data de Nascimento</th>
+                                    <th>Senha</th>
+                                </tr>
+                            </thead>
+
+                
+                    <div class="modal-container active">
+                        <div class="modal">
+                            <form th:action="@{/uniao-voluntaria/event/add-evento}" th:object="${evento}" method="post">
+                                <label for="m-nome">Nome</label>
+                                <input th:field="*{nome}" id="m-nome" type="text" required>
+
+                                <label for="m-email">Cep</label>
+                                <input th:field="*{cep}" id="m-email" type="text" required>
+                                
+                                 <label for="m-data">Data do Evento</label>
+                                <input th:field="*{data}" id="m-data" type="date" required>
+
+                                <label for="m-hora">Hora de Inicio</label>
+                                <input th:field="*{horaInicio}" id="m-hora" type="text" required>
+
+                                <label for="m-vaga">Vagas</label>
+                                <input th:field="*{vagas}" id="m-senha" type="text" required>
+                                
+                                <label for="m-numero">Numero</label>
+                                <input th:field="*{numero}" id="m-senha" type="text" required>
+                                
+                                <label for="m-infos">Informações adicionais</label>
+                                <input th:field="*{infos}" id="m-senha" type="text">
+
+                                <input type="submit"  class="button" value="Cadastrar">
+                            </form>
+                        </div>
+                    </div>
+                          
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
+
+<!--th:href="@{/comercio/produto/novo-user}"-->

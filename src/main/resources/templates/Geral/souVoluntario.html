@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=], initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>União Voluntaria</title>
+        <link rel="stylesheet" href="/Css/style3.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" 
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="../JS/codigo.js" defer type="text/javaScript"></script>
+    </head>
+
+    <body>
+
+        <header>
+
+            <a th:href="@{/uniao-voluntaria/index}" class="logo"><img src="/image/Logo.png"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+                <ul class="menu">
+                    <li><a th:href="@{/uniao-voluntaria/voluntario}" onclick="toggleMenu();">Sou um Voluntario</a></li>
+                    <li><a th:href="@{/uniao-voluntaria/ong}" onclick="toggleMenu();">Sou uma Ong</a></li>
+                    <li><a th:href="@{/uniao-voluntaria/login}" onclick="toggleMenu();">Entrar</a></li>
+                </ul>
+
+        </header>
+        
+        <section class="volunter" id="home">
+            <div class="textBx">
+                <h2><span>Quero ser um voluntario <br></span></h2>
+                <h3>Voluntarios se cadastram pelo aplicativo moblie, e acompaham todas as novidade por la </h3>
+                <a onclick="openModal()" class="btn">Baixar aplicativo</a>
+            </div>
+        </section>
+
+        <div class="modal-container">
+            <div class="modal">
+                <h1>Baixe aqui</h1>
+                <h3>Escolha uma das opções abaixo para instalar aplicatico</h3>
+                <div class="opcao">
+                    <a href="#"><img src="../../image/app-story (1).png" class="apple"></a>
+                    <a href="#"><img src="../../image/app-story (2).png" class="play"></a>
+                </div>
+            </div>
+        </div>
+
+        <script src="../../js/scripit.js"></script>
+    </body>
+</html>

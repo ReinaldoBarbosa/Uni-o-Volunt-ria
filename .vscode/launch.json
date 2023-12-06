@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-UniaoVoluntariaApplication<uniao-voluntaria>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.itb.tcc.uniaovoluntaria.UniaoVoluntariaApplication",
+            "projectName": "uniao-voluntaria",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

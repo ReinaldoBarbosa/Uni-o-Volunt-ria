@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pedidos</title>
+        <link rel="stylesheet" href="../../Css/css.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="https://kit.fontawesome.com/ae37c4f9c1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+            <div class="sidebar">
+            <div class="logo"></div>
+            <ul class="menu">
+                <li>
+                    <a th:href="@{/uniao-voluntaria/home}">
+                        <ion-icon name="home"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a th:href="@{/uniao-voluntaria/evento}">
+                        <ion-icon name="calendar"></ion-icon>
+                        <span>Eventos</span>
+                    </a>
+                </li>
+
+                <li  class="active">
+                    <a th:href="@{/uniao-voluntaria/pedido}">
+                        <ion-icon name="mail-unread"></ion-icon>
+                        <span>Pedidos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a th:href="@{/uniao-voluntaria/contact}">
+                        <i class='bx bx-support icon'></i>
+                        <span>Fale conosco</span>
+                    </a>
+                </li>
+
+                <li class="sair">
+                    <a th:href="@{/uniao-voluntaria/index}">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                        <span>Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="searh--box">
+                <input type="tect" placeholder="Pesquisar">
+                <ion-icon name="search"></ion-icon>
+            </div>
+            <div class="user--info--perfil">
+                <ion-icon name="notifications"></ion-icon>
+                <a th:href="@{/uniao-voluntaria/perfil}"><img src="../../image/no-profile-picture-15257.png" alt=""></a>
+            </div>
+        </div>
+                <div class="user-info">
+                    <form method="post">
+                            <div class="container">
+                                <div class="container--list--soli">
+                                    <div class="inscricao">
+                                        <h1>Solicitações</h1>
+                                        <a th:href="@{/uniao-voluntaria/user}">
+                                        <div class="pedi--user">
+                                            <img src="/Image/user.jpeg">
+                                            <div class="nomes">
+                                                Cleito Suarez
+                                                <br>
+                                                <span>Nome do Evento</span>
+                                            </div>
+                                            <br>
+                                        </div>
+                                        </a>
+
+                                        <a th:href="@{/uniao-voluntaria/user}">
+                                        <div class="pedi--user--bx">
+                                            <img src="/Image/user.jpeg">
+                                            <div class="nomes">
+                                                Cleito Suarez
+                                                <br>
+                                                <span>Nome do Evento</span>
+                                            </div>
+                                            <br>
+                                        </div>
+                                        </a>
+
+                                        <a th:href="@{/uniao-voluntaria/user}">
+                                        <div class="pedi--user">
+                                            <img src="/Image/user.jpeg">
+                                            <div class="nomes">
+                                                Cleito Suarez
+                                                <br>
+                                                <span>Nome do Evento</span>
+                                            </div>
+                                            <br>
+                                        </div>
+                                        </a>
+
+                                        <a th:href="@{/uniao-voluntaria/user}">
+                                        <div class="pedi--user--bx">
+                                           <img src="/Image/user.jpeg">
+                                            <div class="nomes">
+                                                Cleito Suarez
+                                                <br>
+                                                <span>Nome do Evento</span>
+                                            </div>
+                                            <br>
+                                        </div>
+                                        </a>
+
+                                        <a th:href="@{/uniao-voluntaria/user}">
+                                        <div class="pedi--user">
+                                            <img src="/Image/user.jpeg">
+                                            <div class="nomes">
+                                                Cleito Suarez
+                                                <br>
+                                                <span>Nome do Evento</span>
+                                            </div>
+                                            <br>
+                                        </div>
+                                        </a>
+
+                                        <a th:href="@{/uniao-voluntaria/user}">
+                                        <div class="pedi--user--bx">
+                                           <img src="/Image/user.jpeg">
+                                            <div class="nomes">
+                                                Cleito Suarez
+                                                <br>
+                                                <span>Nome do Evento</span>
+                                            </div>
+                                            <br>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div class="pedido">
+                                        <h1>Eventos</h1>
+                                        <a  th:href="@{/uniao-voluntaria/view-evento}">
+                                        <div class="pedi--user">
+                                            <img src="../../image/Imagem-para-Portal-94.png">
+                                            <div class="nomes">
+                                                Nome do Evento
+                                                <br>
+                                                <span>informações</span>
+                                            </div>
+                                            <br>
+                                        </div>
+                                        </a>
+
+                                        <a th:href="@{/uniao-voluntaria/view-evento}">
+                                        <div class="pedi--user--bx">
+                                            <img src="../../image/Imagem-para-Portal-94.png">
+                                            <div class="nomes">
+                                                Nome do Evento
+                                                <br>
+                                                <span>informações</span>
+                                            </div>
+                                            <br>
+                                        </div>
+                                        </a>
+
+                                        <a  th:href="@{/uniao-voluntaria/view-evento}">
+                                        <div class="pedi--user">
+                                            <img src="../../image/Imagem-para-Portal-94.png">
+                                            <div class="nomes">
+                                                Nome do Evento
+                                                <br>
+                                                <span>informações</span>
+                                            </div>
+                                            <br>
+                                        </div>
+                                        </a>
+
+                                        <a  th:href="@{/uniao-voluntaria/view-evento}">
+                                        <div class="pedi--user--bx">
+                                            <img src="../../image/Imagem-para-Portal-94.png">
+                                            <div class="nomes">
+                                                Nome do Evento
+                                                <br>
+                                                <span>informações</span>
+                                            </div>
+                                            <br>
+                                        </div>
+                                        </a>
+
+                                        <a  th:href="@{/uniao-voluntaria/view-evento}">
+                                        <div class="pedi--user">
+                                            <img src="../../image/Imagem-para-Portal-94.png">
+                                            <div class="nomes">
+                                                Nome do Evento
+                                                <br>
+                                                <span>informações</span>
+                                            </div>
+                                            <br>
+                                        </div>
+                                        </a>
+
+                                        <a  th:href="@{/uniao-voluntaria/view-evento}">
+                                        <div onclick="" class="pedi--user--bx">
+                                            <img src="../../image/Imagem-para-Portal-94.png">
+                                            <div class="nomes">
+                                                Nome do Evento
+                                                <br>
+                                                <span>informações</span>
+                                            </div>
+                                            <br>
+                                        </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    
+                </div>
+            </div>
+
+            <div class="modal-container">
+                <div class="modal">
+                        <div class="header">
+                           <img src="../image/Imagem-para-Portal-94.png">
+                           <div class="txt">
+                            <h1>Entrga de cesta basica</h1>
+                            <br>
+                            <p>Dados do eventos como: local, dia, Horario, etc..</p>
+                           </div>
+                            
+                        </div>
+
+                        <div class="main--op">
+                            <div class="title">
+                                <h1>Descrição de exemplo</h1>
+                            </div>
+
+                            <div class="info">
+                                <p>
+                                    Sobre a vaga
+                                    <br>
+                                    <br>
+                                    Nós do Atados acreditamos no voluntariado como troca de vivências e experiências, como possibilidade de desenvolvimento de habilidades e uma oportunidade das pessoas participarem ativamente da transformação social.
+                                    Com o propósito de mobilizar pessoas e impulsionar transformações positivas na sociedade, o Atados também promove encontros e formações de fortalecimento de rede do terceiro setor.
+                                    <br>
+                                    <br>
+                                    O próximo encontro, Café com ONG's, tem como objetivo abrir espaço de troca sobre mobilização, gestão e engajamento de voluntários para organizações sociais.
+                                    Além disso, incentiva a partilha de conhecimento, aprendizados e experiências. Será na Zona Norte do Rio de Janeiro, no dia 10/10!
+                                    <br>
+                                    <br>
+                                    Estamos em busca de pessoas comunicativas e com agilidade para nos apoiar com a produção do evento, como:
+                                </p>
+                            </div>
+                        </div>
+                        <a href="souVoluntario.html" class="btn">Quero me inscrever</a>
+                </div>
+            </div>
+            
+            
+         
+    </body>
+</html>
