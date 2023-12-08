@@ -16,6 +16,7 @@ import javax.persistence.Table;
 public class Evento {
 	
 	@Id // PK
+	
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-Incremento de 1 em 1
 	private long id;
 	
